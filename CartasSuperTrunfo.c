@@ -105,5 +105,4 @@ int main() {
     printf("PIB: %.2f\n", crt2_pib);
     printf("Número de Pontos Turísticos: %d\n", crt2_pntsTuristicos);
     return 0;
-    return 0;
 }

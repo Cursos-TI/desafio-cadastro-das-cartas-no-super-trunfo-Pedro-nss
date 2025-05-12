@@ -55,6 +55,8 @@ int main() {
     scanf("%d",&crt1_pntsTuristicos);
     getchar();
     
+    float crt1_dPopulacional = (float)crt1_populacao/crt1_area;
+    float crt1_pibCapita = (crt1_pib * 1000000000.0f)/(float)crt1_populacao;
     //Cadastro da segunda carta
     printf("\n--- Cadastro da Carta 2 ---\n");
 
@@ -85,7 +87,8 @@ int main() {
     printf("Digite o Número de Pontos Turísticos:\n");
     scanf("%d",&crt2_pntsTuristicos);
     getchar(); 
-
+    float crt2_dPopulacional = (float) crt2_populacao/crt2_area;
+    float crt2_pibCapita = (crt2_pib * 1000000000.0f)/ (float) crt2_populacao; 
     //Exibição de cartas
     printf("\n===== Cartas Cadastradas =====\n");
     printf("Carta 1:\n");
@@ -96,6 +99,8 @@ int main() {
     printf("Área: %.2f\n", crt1_area);
     printf("PIB: %.2f\n", crt1_pib);
     printf("Número de Pontos Turísticos: %d\n", crt1_pntsTuristicos);
+    printf("Densidade Populacional: %.2f \n",crt1_dPopulacional);
+    printf("PIB per capita: %.2f \n",crt1_pibCapita);
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", crt2_estado);
     printf("Código da carta: %s\n", crt2_codCarta);
@@ -104,5 +109,7 @@ int main() {
     printf("Área: %.2f\n", crt2_area);
     printf("PIB: %.2f\n", crt2_pib);
     printf("Número de Pontos Turísticos: %d\n", crt2_pntsTuristicos);
+    printf("Densidade Populacional: %.2f \n",crt2_dPopulacional);
+    printf("PIB per capita: %.2f \n",crt2_pibCapita);
     return 0;
 }
